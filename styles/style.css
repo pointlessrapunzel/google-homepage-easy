@@ -1,0 +1,237 @@
+/*
+  ======================
+  General
+  ======================
+*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/*
+  ======================
+  Navbar
+  ======================
+*/
+
+
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+
+nav .leftnav {
+    padding: 25px 25px; 
+}
+
+nav .rightnav {
+    padding: 25px 25px; 
+}
+
+#grid-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/iconfinder_apps_326511.svg) no-repeat;
+    background-size: contain;
+    opacity: .5;
+
+}
+
+#grid-icon:hover {
+    opacity: .85;
+}
+
+#sign-in {
+    padding: 8px 14px;
+    background-color: #4a89ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: default;
+}
+
+nav li a {
+    color: #444;
+    margin: 0 10px;
+}
+
+nav li a:hover {
+    color: #6f6f6f;
+}
+
+/* also applies to the footer */
+nav, .footnav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li a {
+    color: #6f6f6f;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.leftnav {
+    float: left;
+}
+
+.rightnav {
+    float: right;
+}
+
+li:first-child a {
+    margin-left: 0;
+}
+
+li:last-child a {
+    margin-right: 0;
+}
+
+/*
+  ======================
+  Main
+  ======================
+*/
+
+.main {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    margin-top: 190px;
+}
+
+.main img {
+    width: 272px;
+    margin: 10px auto;
+}
+
+.search-bar {
+    width: 580px;
+    height: 45px;
+    border: 1px solid #e2e2e2;
+    border-radius: 25px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 510px;
+    margin-left: 10px;
+    border: none;
+    padding: 0;
+    font-size: 15.5px;
+}
+
+@media (max-width: 640px) {
+    .search-bar {
+        width: 470px;
+    }
+
+    .search-bar input {
+        width: 400px;
+    }
+}
+
+.search-bar:hover {
+    box-shadow: 0 1px 5px #cecece;
+}
+
+
+
+input:focus{
+    outline: none;
+}
+
+.voice {
+    width: 20px;
+    height: 20px;
+    background: url(../images/Google_mic.svg.png) center no-repeat;
+    background-size: contain;
+}
+
+.voicewrap {
+    padding: 10px;
+}
+
+/*
+  ======================
+  Buttons
+  ======================
+*/
+
+.btn-main {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-main button {
+    color: #555;
+    background-color: #f2f2f2;
+    margin: 15px 6px;
+    padding: 9px 16px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-main button:hover {
+    color: #000;
+    background-color: #f5f5f5;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 1px 2px #f1f1f1; 
+    box-shadow: inset 0 1px 5px #f1f1f1;
+}
+
+/*
+  ======================
+  Footer
+  ======================
+*/
+
+footer {
+    background-color: #f2f2f2;
+    flex-shrink: 0;
+}
+
+footer .leftnav {
+    padding: 14px 30px 15px;
+}
+
+footer .rightnav {
+    padding: 14px 30px 15px;
+}
+
+.country {
+    font-size: 15px;
+    border: 1px solid #e3e3e3;
+    padding: 13px 30px;
+    color: #7f7f7f;
+}
