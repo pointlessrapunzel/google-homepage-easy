@@ -1,0 +1,30 @@
+/*
+  ======================
+  General
+  ======================
+*/
+
+html, body {
+    height: 100%; /* for older browsers */
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    width: 272px;
+}
+
+
+
+#icon-mic {
+    width: 50px;
+    height: 50px;
+}
+#icon-mic a {
+    display: block;
+    height: 100%;
+}

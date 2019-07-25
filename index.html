@@ -5,64 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Google</title>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style1.css">
 </head>
 <body>
     <nav>
-        <div class="leftnav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
-            </ul>
-        </div>
-        <div class="rightnav">
-            <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#"><div id="grid-icon"></div></a></li>
-                <li><a href="#" id="sign-in">Sign In</a></li>
-            </ul>
+        <div class="nav-wrap">
+            <div class="left-nav">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Store</a></li>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="#">Gmail</a></li>
+                    <li><a href="#">Images</a></li>
+                    <li>
+                        <div class="icon-grid-apps">
+                            <a href="#">Apps</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-sign-in">
+                            <a href="#">Sign In</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="main">
-        <img src="images/googlelogo_color_272x92dp.png" alt="Google" id="logo">
-        <form action="#" method="GET">
-            <div class="search-bar">
-                <input type="text" name="search" id="search">
-                <a href="#">
-                    <div class="voicewrap">
-                        <div class="voice">
+    <main>
+        <div class="logo-wrap">
+            <img src="images/googlelogo_color_272x92dp.png" alt="Google" id="logo">
+        </div>
+        <div class="search-form-wrap">
+            <form action="#" method="GET">
+                <div class="search-bar">
+                    <input type="text">
+                    <div id="voice-wrap">
+                        <div id="icon-mic">
+                            <a href="#">mic</a>
                         </div>
                     </div>
-                </a>
-            </div>
-            <div class="btn-main">
-                <button type="submit">Google Search</button>
-                <button>I'm Feeling Lucky</button>
-            </div>
-        </form>
-    </div>
-    
+                </div>
+                <div class="btn-wrap">
+                    <input type="submit" value="Google Search" class="btn">
+                    <input type="submit" value="I'm Feeling Lucky" class="btn">
+                </div>
+            </form>
+        </div>
+    </main>
+
     <footer>
-        <div class="country"><span>Australia</span></div>
-        <div class="footnav">
-            <div class="leftnav">
-                <ul>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">How Search works</a></li>
-                </ul>
+        <div class="foot-wrap">
+            <div class="country">
+                <span>Australia</span>
             </div>
-            <div class="rightnav">
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
+            <div class="foot-nav">
+                <div class="foot-left">
+                    <ul>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">How Search works</a></li>
+                    </ul>
+                </div>
+                <div class="foot-right">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
+
 
 </body>
 </html>

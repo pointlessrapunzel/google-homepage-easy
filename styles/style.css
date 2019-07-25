@@ -5,7 +5,8 @@
 */
 
 html, body {
-    height: 100%;
+    height: 100%; /* for older browsers */
+    height: 100vh;
 }
 
 body {
@@ -22,22 +23,13 @@ body {
   ======================
 */
 
-
-
 nav {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100px;
-}
-
-nav .leftnav {
-    padding: 25px 25px; 
-}
-
-nav .rightnav {
-    padding: 25px 25px; 
+    padding: 25px 25px;
 }
 
 #grid-icon {
@@ -47,7 +39,6 @@ nav .rightnav {
     background: url(../images/iconfinder_apps_326511.svg) no-repeat;
     background-size: contain;
     opacity: .5;
-
 }
 
 #grid-icon:hover {
