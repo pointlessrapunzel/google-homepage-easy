@@ -7,84 +7,153 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style1.css">
 </head>
-<body>
-    <nav>
-        <div class="nav-wrap">
-            <div class="left-nav">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Store</a></li>
-                </ul>
-            </div>
-            <div class="right-nav">
-                <ul>
-                    <li><a href="#">Gmail</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li>
-                        <div class="icon-grid-apps">
-                            <a href="#">Apps</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="btn-sign-in">
-                            <a href="#">Sign In</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <main>
-        <div class="logo-wrap">
-            <img src="images/googlelogo_color_272x92dp.png" alt="Google" id="logo">
-        </div>
-        <div class="search-form-wrap">
-            <form action="#" method="GET">
-                <div class="search-bar">
-                    <input type="text">
-                    <div id="voice-wrap">
-                        <div id="icon-mic">
-                            <a href="#">mic</a>
+<body>
+    <div class="page-container">
+
+        <nav>
+            <div class="nav-wrap">
+                <div class="nav-left">
+                    <ul>
+                        <li>
+                            <div class="nav-item-container mobile">
+                                <span class="icon icon-hamburger">    
+                                    <a href="#"></a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item-container mobile">
+                                <a href="#">All</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item-container desktop">
+                                <a href="#">About</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item-container desktop">
+                                <a href="#">Store</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li>
+                            <div class="nav-item-container desktop">
+                                <a href="#">Gmail</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item-container images">
+                                <a href="#">Images</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item-container apps">
+                                <a href="#">
+                                    <span class="icon icon-apps"></span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item-container sign-in">
+                                <a href="#">
+                                    <span class="btn-sign-in">Sign In</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="logo-wrap">
+                <img src="images/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+            </div>
+            <div class="search-form-wrap">
+                <form action="#" method="GET">
+                    <div class="search-bar">
+                        <input type="text">
+                        <div id="voice-wrap">
+                            <a href="#">
+                                <span class="icon icon-mic"></span>
+                            </a>
+                        </div>
+                        <div id="search-wrap mobile">
+                            <button type="submit">
+                                <span class="icon icon-search"></span>
+                            </button>
                         </div>
                     </div>
-                </div>
-                <div class="btn-wrap">
-                    <input type="submit" value="Google Search" class="btn">
-                    <input type="submit" value="I'm Feeling Lucky" class="btn">
-                </div>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div class="foot-wrap">
-            <div class="country">
-                <span>Australia</span>
+                    <div class="btn-wrap desktop">
+                        <input type="submit" value="Google Search" class="btn">
+                        <input type="submit" value="I'm Feeling Lucky" class="btn">
+                    </div>
+                </form>
             </div>
-            <div class="foot-nav">
-                <div class="foot-left">
-                    <ul>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">How Search works</a></li>
-                    </ul>
+        </main>
+
+        <footer>
+            <div class="foot-wrap">
+                <div class="country">
+                    <span>Australia</span>
                 </div>
-                <div class="foot-right">
-                    <ul>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
+                <div class="foot-nav">
+                    <div class="foot-left">
+                        <ul>
+                            <li>
+                                <div class="nav-item-container">
+                                    <a href="#">Advertising</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item-container">
+                                    <a href="#">Business</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item-container mobile">
+                                    <a href="#">About</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item-container desktop">
+                                    <a href="#">How Search works</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot-right">
+                        <ul>
+                            <li>
+                                <div class="nav-item-container">
+                                    <a href="#">Privacy</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="nav-item-container">
+                                    <a href="#">Terms</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="nav-item-container">
+                                    <a href="#">Settings</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-
+    </div>
 </body>
 </html>

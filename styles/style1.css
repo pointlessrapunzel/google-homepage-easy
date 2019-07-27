@@ -4,9 +4,15 @@
   ======================
 */
 
-html, body {
-    height: 100%; /* for older browsers */
-    height: 100vh;
+body {
+    min-height: 100%; /* for older browsers */
+    min-height: 100vh;
+    color: #000;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 main {
@@ -14,17 +20,74 @@ main {
     flex-direction: column;
 }
 
-#logo {
-    width: 272px;
+.logo {
+    width: 160px;
 }
 
-
-
-#icon-mic {
-    width: 50px;
-    height: 50px;
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
-#icon-mic a {
-    display: block;
-    height: 100%;
+
+.icon-mic {
+    height: 24px;
+    width: 24px;
+    background-image: url(../images/Google_mic.svg);
+}
+
+.icon-apps {
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/show-apps-button.svg);
+    opacity: 0.5;
+}
+
+.icon-apps:hover {
+    opacity: 0.8;
+}
+
+.icon-hamburger {
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/Hamburger_icon.svg);
+    opacity: 0.6;
+}
+
+.icon-search {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/baseline-search-24px.svg);
+}
+
+.desktop {
+    display: none;
+}
+
+/*
+  ======================
+  Navigation
+  ======================
+*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.nav-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    padding: 15px;
+}
+
+.nav-left ul, .nav-right ul {
+    display: flex;
 }
