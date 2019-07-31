@@ -12,66 +12,46 @@
     <div class="page-container">
 
         <nav>
-            <div class="nav-wrap">
-                <div class="nav-left">
-                    <ul>
-                        <li>
-                            <div class="nav-item-container mobile">
-                                <span class="icon icon-hamburger">    
-                                    <a href="#"></a>
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container mobile">
-                                <a href="#">All</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container mobile">
-                                <a href="#">Images</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container desktop">
-                                <a href="#">About</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container desktop">
-                                <a href="#">Store</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li>
-                            <div class="nav-item-container desktop">
-                                <a href="#">Gmail</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container desktop">
-                                <a href="#">Images</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container">
-                                <a href="#">
-                                    <span class="icon icon-apps"></span>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item-container">
-                                <a href="#">
-                                    <span class="btn-sign-in">Sign In</span>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <div class="nav-left">
+                <ul>
+                    <li class="nav-item-container mobile">
+                        <span class="icon icon-hamburger">    
+                            <a href="#"></a>
+                        </span>
+                    </li>
+                    <li class="nav-item-container mobile">
+                        <a href="#">All</a>
+                    </li>
+                    <li class="nav-item-container mobile">
+                        <a href="#">Images</a>
+                    </li>
+                    <li class="nav-item-container desktop">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-item-container desktop">
+                        <a href="#">Store</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="nav-item-container desktop">
+                        <a href="#">Gmail</a>
+                    </li>
+                    <li class="nav-item-container desktop">
+                        <a href="#">Images</a>
+                    </li>
+                    <li class="nav-item-container">
+                        <a href="#">
+                            <span class="icon icon-apps"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item-container">
+                        <a href="#">
+                            <span class="btn-sign-in">Sign In</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -83,14 +63,19 @@
                 <form action="#" method="GET">
                     <div class="search-bar">
                         <input type="text">
-                        <div id="voice-wrap">
+                        <div id="voice-wrap" class="desktop">
                             <a href="#">
                                 <span class="icon icon-mic"></span>
                             </a>
                         </div>
-                        <div id="search-wrap mobile">
-                            <button type="submit" class="search-btn mobile">
-                                <span class="icon icon-search"></span>
+                        <div class="search-wrap mobile">
+                            <button type="submit" class="search-btn">
+                                <span class="icon-search">
+                                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 
+                                        16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                    </svg>
+                                </span>
                             </button>
                         </div>
                     </div>
