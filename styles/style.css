@@ -240,6 +240,7 @@ footer {
 }
 
 .icon-search svg {
+    width: inherit;
     color: #fff;
     fill: currentColor;
 }
@@ -285,7 +286,7 @@ footer {
     }
 
     nav li a:hover {
-        color: #333;
+        color: #444;
     }
 
     /*
@@ -300,7 +301,8 @@ footer {
     }
 
     .nav-left {
-        color: #000;
+        padding-top:20px;
+        color: #222;
         font-size: 13px;
         font-weight: normal;
         text-transform: capitalize;
@@ -358,7 +360,6 @@ footer {
     */
 
     .btn-wrap {
-        
         padding-top: 15px;
         display: flex;
         justify-content: center;
