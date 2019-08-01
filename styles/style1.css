@@ -20,14 +20,11 @@
     width: 160px;
 }
 
-.desktop {
-    display: none;
-}
-
 a {
     text-decoration: none;
     color: inherit;
 }
+
 
 /*
   ======================
@@ -36,14 +33,20 @@ a {
 */
 
 nav {
-    position: fixed;
     width: 100%;
-    height: 50px;
+    height: 48px;
+    position: fixed;
     left: 0px;
     top: 0px;
 
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    width: 160px;
 }
 
 .nav-left {
@@ -51,30 +54,47 @@ nav {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
-    height: 100%;
-}
-
-.nav-left ul li a {
-    heigth: 100%;
-}
-
-.nav-left ul, .nav-right ul {
-    display: flex;
+    padding-top: 15px;
+    padding-left: 15px;
+    align-items: stretch;
     justify-content: space-between;
 }
 
+.nav-right {
+    padding-top: 10px;
+    padding-right: 8px;
+    justify-content: flex-end;
+}
+
+.nav-left .nav-item-container {
+    height: 100%;
+    margin-right: 0 auto;
+}
+
+.nav-left .nav-item-container a {
+    display: inline-block;
+    height: 100%;
+    padding: 3px 8px 0;
+}
+
+.nav-right .nav-item-container {
+    margin-left: 18px;
+}
+
+.active {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+}
+
 .btn-sign-in {
-    padding: 7px 10px;
+    display: inline-block;
+    padding: 0 12px;
+    line-height: 28px;
     color: #666;
     border: 1px solid #c6c6c6;
     border-radius: 2px;
     background-color: #f8f8f8;
 }
-
-.active {
-
-}
-
 
 /*
   ======================
@@ -189,12 +209,15 @@ footer {
 }
 
 .icon-apps {
+    position: relative;
+    top: 7px;
+
     width: 16px;
     height: 16px;
     background-image: url(../images/show-apps-button.svg);
     opacity: 0.5;
 }
-
+s
 .icon-apps:hover {
     opacity: 0.8;
 }
@@ -225,9 +248,23 @@ footer {
     background-image: url(../images/Google_mic.svg);
 }
 
+/* Mobile version */
+@media (max-width: 800px) {
+    .desktop {
+        display: none;
+    }
+}
+
 
 /* Desktop version */
 @media (min-width: 800px) {
+
+/*
+  ======================
+  General
+  ======================
+*/
+
     .mobile {
         display: none;
     }
@@ -239,8 +276,6 @@ footer {
     .logo {
         width: 272px;
     }
-
-
 }
 
 
